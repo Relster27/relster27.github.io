@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>relster</title>
+<meta name="description" content="Relster27 — CTF player focused on binary exploitation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Relster</a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="https://relster.gitbook.io" target="_blank" rel="noopener">Writeups</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card">
+    <div class="hero">
+      <img class="avatar" src="images/profile.webp" alt="Relster's profile picture" width="88" height="88">
+      <div>
+        <h1>Hi, I'm <span class="name">Relster</span>.</h1>
+        <p class="role">Pwner</p>
+      </div>
+    </div>
+    <p class="intro">
+      I'm into low-level stuff related to security and development. I also play CTFs with pwn as my main category.
+    </p>
+    <nav class="links">
+      <a class="github" href="https://github.com/Relster27" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/reinhard-hatcher-3209382bb" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <button type="button" class="discord" data-user="relster." aria-label="Copy Discord username: relster." title="Discord: relster. (click to copy)"><i class="fa-brands fa-discord"></i><span class="tip" role="status"></span></button>
+      <a class="ctftime" href="https://ctftime.org/user/210770" target="_blank" rel="noopener" aria-label="CTFtime" title="CTFtime"><img src="images/ctftime.png" alt="" width="18" height="18"></a>
+      <a class="gitbook" href="https://relster.gitbook.io" target="_blank" rel="noopener" aria-label="CTF writeups" title="My writeups"><img src="images/gitbook.png" alt="" width="18" height="18"></a>
+    </nav>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">&copy; 2026 relster</div>
+</footer>
+<script>
+  document.querySelectorAll(".discord").forEach(btn => {
+    const tip = btn.querySelector(".tip");
+    btn.addEventListener("click", async () => {
+      const user = btn.dataset.user;
+      try {
+        await navigator.clipboard.writeText(user);
+        tip.textContent = "Copied: " + user;
+      } catch {
+        tip.textContent = "Discord: " + user;
+      }
+      btn.classList.add("show");
+      clearTimeout(btn._t);
+      btn._t = setTimeout(() => btn.classList.remove("show"), 1800);
+    });
+  });
+</script>
+</body>
+</html>
