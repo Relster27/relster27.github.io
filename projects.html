@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>projects · relster</title>
+<meta name="description" content="Relster27 — CTF player focused on binary exploitation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Relster</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="https://relster.gitbook.io" target="_blank" rel="noopener">Writeups</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!--
+    HOW TO ADD PROJECTS
+    ===================
+    - New challenge/item in an existing section:
+        copy a <a class="project-box"> ... </a> block (or TEMPLATE A at the bottom)
+        and paste it inside that section's <div class="project-grid">.
+    - Whole new project section:
+        copy TEMPLATE B at the bottom, paste it above the templates, and fill it in.
+
+    Boxes sit two per row. If a section ends up with an odd number of boxes,
+    the last one stretches full width automatically, so it always looks even.
+  -->
+
+  <article class="card projects">
+    <header>
+      <h1><span class="name">Projects</span></h1>
+    </header>
+
+    <!-- ========== PROJECT: CTF Challenges ========== -->
+    <section aria-labelledby="ctf-challenges">
+      <div class="project-head">
+        <h2 id="ctf-challenges">CTF Challenges</h2>
+        <a class="repo-link" href="https://github.com/Relster27/my-ctf-challenges/tree/main" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> my-ctf-challenges
+        </a>
+      </div>
+      <p>Pwn challenges I've authored for national CTF competitions, from glibc heap to Linux kernel exploitation.</p>
+
+      <div class="project-grid">
+
+        <!-- box -->
+        <a class="project-box" href="https://github.com/Relster27/my-ctf-challenges/tree/main/IFEST-CTF-2026" target="_blank" rel="noopener">
+          <div class="box-head">
+            <strong>IFEST CTF 2026</strong>
+            <span class="stage">Final</span>
+          </div>
+          <span class="chall">bad ring</span>
+          <ul class="tags">
+            <li>Dangling pointer</li>
+            <li>Use-after-free</li>
+            <li>DirtyPipe / PageJack</li>
+          </ul>
+        </a>
+
+        <!-- box -->
+        <a class="project-box" href="https://github.com/Relster27/my-ctf-challenges/tree/main/Bee-CTF-2026" target="_blank" rel="noopener">
+          <div class="box-head">
+            <strong>Bee CTF 2026</strong>
+            <span class="stage">Qual</span>
+          </div>
+          <span class="chall">toxic</span>
+          <ul class="tags">
+            <li>Use-after-free</li>
+            <li>modprobe_path</li>
+          </ul>
+        </a>
+
+        <!-- box -->
+        <a class="project-box" href="https://github.com/Relster27/my-ctf-challenges/tree/main/Techfest-CTF-2026" target="_blank" rel="noopener">
+          <div class="box-head">
+            <strong>Techfest CTF 2026</strong>
+            <span class="stage">Qual</span>
+          </div>
+          <span class="chall">ezsc2</span>
+          <ul class="tags">
+            <li>Shellcode</li>
+            <li>Side-channel</li>
+          </ul>
+        </a>
+
+        <!-- box -->
+        <a class="project-box" href="https://github.com/Relster27/my-ctf-challenges/tree/main/PETIR-Regeneration-2026" target="_blank" rel="noopener">
+          <div class="box-head">
+            <strong>PETIR Regeneration 2026</strong>
+          </div>
+          <span class="chall">Double Trouble · Mr Blue Melville</span>
+          <ul class="tags">
+            <li>Glibc heap</li>
+            <li>Buffer overflow</li>
+          </ul>
+        </a>
+
+      </div>
+    </section>
+    <!-- ========== END PROJECT: CTF Challenges ========== -->
+    
+    
+    <!-- ========== PROJECT: Pool Allocator ========== -->
+    <section aria-labelledby="pool-allocator">
+      <div class="project-head">
+        <h2 id="pool-allocator">Pool Allocator</h2>
+        <a class="repo-link" href="https://github.com/Relster27/Pool-Allocator" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> Pool-Allocator
+        </a>
+      </div>
+      <p>A simple memory allocator written in C, built from scratch on top of <code>mmap</code>.
+      It hands out memory from page-sized pools, splits chunks to fit each request, and merges
+      neighbouring free chunks back together when memory is freed.</p>
+
+      <div class="project-grid">
+        <!-- paste boxes here -->
+      </div>
+    </section>
+    <!-- ========== END PROJECT: Pool Allocator ========== -->
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">&copy; 2026 relster</div>
+</footer>
+</body>
+</html>
