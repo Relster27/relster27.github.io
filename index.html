@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Relster27 — CTF player focused on binary exploitation." />
+    <meta name="theme-color" content="#0a0508" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <script>
+      /* Only the home page shows the painting, so only start fetching it there. Same srcset/sizes as <LivingScene>, so the browser reuses it. */
+      if (!location.hash || location.hash === '#' || location.hash === '#/') {
+        var l = document.createElement('link');
+        l.rel = 'preload';
+        l.as = 'image';
+        l.type = 'image/webp';
+        l.setAttribute('fetchpriority', 'high');
+        l.setAttribute('imagesrcset', '/images/homepage-2k.webp 2048w, /images/homepage-4k.webp 4096w');
+        l.setAttribute('imagesizes', 'max(100vw, calc(100vh * 1.784))');
+        document.head.appendChild(l);
+      }
+    </script>
+    <title>relster</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
