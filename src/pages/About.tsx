@@ -4,6 +4,7 @@ import { H2, Page, Tags } from '@/components/Card'
 const link = 'link-anim text-rose transition-colors hover:text-[#ff9db8]'
 
 const achievements = [
+  { title: '3rd Place, JOINTS CTF 2026', date: 'Nov 2026', org: 'Universitas Gadjah Mada', /*pdf: '/images/certificates/HackToday-2026.pdf' */},
   { title: '5th Place, HackToday 2026', date: 'Oct 2026', org: 'IPB University', pdf: '/images/certificates/HackToday-2026.pdf' },
   { title: '3rd Place, COMPFEST CTF 2026', date: 'Sep 2026', org: 'Universitas Indonesia', pdf: '/images/certificates/compfest-18.pdf' },
   { title: 'Best Defender, Wreck-It CTF 7.0', date: 'Aug 2026', org: 'Politeknik Siber dan Sandi Negara', img: '/images/certificates/wreck-it-7.webp', alt: 'Wreck-IT 7.0 Best Defender certificate' },
