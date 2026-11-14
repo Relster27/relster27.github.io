@@ -231,7 +231,7 @@
   "metadata": {
     "title": "relster",
     "description": "Relster27 — CTF player focused on binary exploitation.",
-    "favicon": "/images/favicon.png?v=2"
+    "favicon": "/images/favicon.png?v=3"
   },
   "existingFooter": {
     "copyright": "© 2026 relster"
