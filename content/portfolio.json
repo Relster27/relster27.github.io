@@ -1,0 +1,239 @@
+{
+  "profile": {
+    "name": "Reinhard Hatcher Waas",
+    "alias": "Relster",
+    "headline": "Hi, I'm Relster.",
+    "role": "Pwner",
+    "summary": "I'm into low-level stuff related to security and development. I also play CTFs with pwn as my main category.",
+    "bio": "Hola! I'm Reinhard, also known online as Relster. I'm an undergraduate student at the School of Computer Science, Bina Nusantara University, with a passionate interest in low-level security stuff and development.",
+    "image": "/images/profile.webp",
+    "imageAlt": "Relster's profile picture",
+    "currently": "Exploring Linux kernel vulnerability research and working on side projects related to the Linux kernel. I'm also learning QEMU exploitation, with V8 exploitation next on the list."
+  },
+  "focus": [
+    "Binary exploitation",
+    "Reverse engineering",
+    "Vulnerability research",
+    "Linux kernel exploitation"
+  ],
+  "skills": {
+    "technical": [
+      "C/C++",
+      "x86 assembly",
+      "Python",
+      "Linux",
+      "Git",
+      "Docker",
+      "QEMU",
+      "Binary exploitation",
+      "Reverse engineering",
+      "Vulnerability research"
+    ],
+    "nonTechnical": [
+      "Problem setter",
+      "Writing",
+      "Team working",
+      "Public speaking",
+      "Mentoring"
+    ],
+    "languages": [
+      "English (Professional proficiency)",
+      "Indonesian (Native proficiency)"
+    ]
+  },
+  "experience": [
+    {
+      "description": "Competing and winning in national and international CTFs as a member of team PETIR"
+    },
+    {
+      "description": "Authored several CTF challenges for national competitions",
+      "url": "https://github.com/Relster27/my-ctf-challenges/tree/main"
+    },
+    {
+      "description": "Mentored high school students for LKS",
+      "url": "https://github.com/Relster27/pwn-teaching"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "3rd Place, JOINTS CTF 2026",
+      "date": "Nov 2026",
+      "organization": "Universitas Gadjah Mada",
+      "certificate": null
+    },
+    {
+      "title": "5th Place, HackToday 2026",
+      "date": "Oct 2026",
+      "organization": "IPB University",
+      "certificate": {
+        "type": "pdf",
+        "path": "/images/certificates/HackToday-2026.pdf"
+      }
+    },
+    {
+      "title": "3rd Place, COMPFEST CTF 2026",
+      "date": "Sep 2026",
+      "organization": "Universitas Indonesia",
+      "certificate": {
+        "type": "pdf",
+        "path": "/images/certificates/compfest-18.pdf"
+      }
+    },
+    {
+      "title": "Best Defender, Wreck-It CTF 7.0",
+      "date": "Aug 2026",
+      "organization": "Politeknik Siber dan Sandi Negara",
+      "certificate": {
+        "type": "image",
+        "path": "/images/certificates/wreck-it-7.webp",
+        "alt": "Wreck-IT 7.0 Best Defender certificate"
+      }
+    },
+    {
+      "title": "Best Defender, PlayIt CTF 2026",
+      "date": "Jun 2026",
+      "organization": "Politeknik Negeri Malang",
+      "certificate": {
+        "type": "image",
+        "path": "/images/certificates/playit-2026.webp",
+        "alt": "Play IT 2026 Best Defender certificate"
+      }
+    },
+    {
+      "title": "CBC Promotional",
+      "date": "May 2026",
+      "organization": "Cyber Breaker",
+      "certificate": {
+        "type": "pdf",
+        "path": "/images/certificates/CBC-promotional.pdf"
+      }
+    },
+    {
+      "title": "2nd Place, ITechnoCup CTF 2025",
+      "date": "Oct 2025",
+      "organization": "Politeknik Negeri Jakarta",
+      "certificate": {
+        "type": "image",
+        "path": "/images/certificates/itechnocup-2025.webp",
+        "alt": "ITechnoCup 2025 2nd place certificate"
+      }
+    },
+    {
+      "title": "Finalist, IFEST CTF 2025",
+      "date": "May 2025",
+      "organization": "Universitas Atma Jaya Yogyakarta",
+      "certificate": null
+    }
+  ],
+  "projects": {
+    "ctfChallenges": {
+      "title": "CTF Challenges & Others",
+      "description": "Pwn challenges I've authored for national CTF competitions, as well as other side projects.",
+      "repository": "https://github.com/Relster27/my-ctf-challenges/tree/main",
+      "entries": [
+        {
+          "event": "NCW 2026",
+          "stage": "Qual & Final",
+          "name": "bad verifier · xxx",
+          "url": "https://github.com/Relster27/my-ctf-challenges/tree/main/",
+          "tags": [
+            "eBPF"
+          ],
+          "description": "A kernel exploitation challenge that utilizes an intended bug in eBPF verifier to perform a privilege escalation."
+        },
+        {
+          "event": "IFEST CTF 2026",
+          "stage": "Final",
+          "name": "bad ring",
+          "url": "https://github.com/Relster27/my-ctf-challenges/tree/main/IFEST-CTF-2026",
+          "tags": [
+            "Dangling pointer",
+            "Use-after-free",
+            "DirtyPipe / PageJack"
+          ],
+          "description": "Kernel pwn challenge that exploits UAF on a ring-bufer structure on a kernel module to escalate privilege."
+        },
+        {
+          "event": "Bee CTF 2026",
+          "stage": "Qual",
+          "name": "toxic",
+          "url": "https://github.com/Relster27/my-ctf-challenges/tree/main/Bee-CTF-2026",
+          "tags": [
+            "Use-after-free",
+            "modprobe_path"
+          ],
+          "description": "Kernel pwn challenge that exploits a simple UAF to overwrite modprobe_path."
+        },
+        {
+          "event": "Techfest CTF 2026",
+          "stage": "Qual",
+          "name": "ezsc2",
+          "url": "https://github.com/Relster27/my-ctf-challenges/tree/main/Techfest-CTF-2026",
+          "tags": [
+            "Shellcode",
+            "Side-channel"
+          ],
+          "description": "Shellcoding challenge where players have to perform side-channel to leak flags (limited syscall)."
+        },
+        {
+          "event": "PETIR Regeneration 2026",
+          "stage": null,
+          "name": "Double Trouble · Mr Blue Melville",
+          "url": "https://github.com/Relster27/my-ctf-challenges/tree/main/PETIR-Regeneration-2026",
+          "tags": [
+            "Off-by-one",
+            "FSOP",
+            "ROP",
+            "exit_funcs",
+            "Buffer overflow",
+            "ret2libc"
+          ],
+          "description": "Two challenges each about glibc heap exploitation and stack-based exploitation challenge."
+        }
+      ]
+    },
+    "poolAllocator": {
+      "title": "Pool Allocator",
+      "repository": "https://github.com/Relster27/Pool-Allocator",
+      "description": "A simple memory allocator written in C and built on top of mmap."
+    }
+  },
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Relster27"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/reinhard-hatcher-3209382bb"
+    },
+    {
+      "label": "CTFtime",
+      "url": "https://ctftime.org/user/210770",
+      "icon": "/images/ctftime.png"
+    },
+    {
+      "label": "CTF writeups",
+      "url": "https://relster.gitbook.io",
+      "icon": "/images/gitbook.png"
+    }
+  ],
+  "contact": {
+    "intro": "Feel free to reach out.",
+    "email": "varelwaas25@gmail.com",
+    "emailUrl": "mailto:varelwaas25@gmail.com",
+    "linkedin": {
+      "label": "Reinhard Hatcher",
+      "url": "https://www.linkedin.com/in/reinhard-hatcher-3209382bb"
+    },
+    "discordUsername": "relster."
+  },
+  "metadata": {
+    "title": "relster",
+    "description": "Relster27 — CTF player focused on binary exploitation.",
+    "favicon": "/images/favicon.png?v=2"
+  },
+  "existingFooter": {
+    "copyright": "© 2026 relster"
+  }
+}
