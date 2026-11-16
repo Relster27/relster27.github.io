@@ -4,11 +4,15 @@
     "alias": "Relster",
     "headline": "Hi, I'm Relster.",
     "role": "Pwner",
-    "summary": "I'm into low-level stuff related to security and development. I also play CTFs with pwn as my main category.",
+    "summary": "I'm interested in low-level security and development. I also play CTFs, with pwn as my main category. I regularly write CTF write-ups—check them out here.",
     "bio": "Hola! I'm Reinhard, also known online as Relster. I'm an undergraduate student at the School of Computer Science, Bina Nusantara University, with a passionate interest in low-level security stuff and development.",
     "image": "/images/profile.webp",
     "imageAlt": "Relster's profile picture",
-    "currently": "Exploring Linux kernel vulnerability research and working on side projects related to the Linux kernel. I'm also learning QEMU exploitation, with V8 exploitation next on the list."
+    "currently": "Exploring Linux kernel vulnerability research and working on side projects related to the Linux kernel. I'm also learning QEMU exploitation, with V8 exploitation next on the list.",
+    "summaryLink": {
+      "text": "here",
+      "url": "https://relster.gitbook.io/"
+    }
   },
   "focus": [
     "Binary exploitation",
@@ -200,11 +204,11 @@
       "description": "A simple memory allocator written in C and built on top of mmap."
     },
     {
-		"type": "project",
-		"title": "AES CBC CLI",
-		"repository": "https://github.com/Relster27/AES-CBC-CLI",
-		"description": "Openssl's AES CBC rip off."
-	}
+      "type": "project",
+      "title": "AES CBC CLI",
+      "repository": "https://github.com/Relster27/AES-CBC-CLI",
+      "description": "Openssl's AES CBC rip off."
+    }
   ],
   "socialLinks": [
     {

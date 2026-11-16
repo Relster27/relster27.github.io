@@ -41,7 +41,7 @@ export default function App() {
         <div className="hero-grid"><div className="hero-copy">
           <h1>{profile.headline}</h1>
           <p className="eyebrow hero-role"><span className="dot"/>{profile.role}</p>
-          <p className="intro">{profile.summary}</p>
+          <p className="intro">{profile.summary.replace(/here\.$/, '')}<a className="intro-link" href={profile.summaryLink.url} target="_blank" rel="noopener noreferrer">{profile.summaryLink.text}</a>.</p>
           <nav className="social-links" aria-label="Social links">{content.socialLinks.map(link => <a className="social-icon" key={link.label} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.label} title={link.label}>{link.label === 'GitHub' ? <FaGithub aria-hidden="true"/> : link.label === 'LinkedIn' ? <FaLinkedinIn aria-hidden="true"/> : <img src={link.icon} alt="" width={20} height={20}/>}</a>)}<button className="social-icon" onClick={copyDiscord} aria-label={`Copy Discord username: ${contact.discordUsername}`} title={`Discord: ${contact.discordUsername}`}><FaDiscord aria-hidden="true"/></button></nav>
           {copyStatus && <p className="social-feedback">{copyStatus}</p>}
         </div><figure className="hero-portrait"><img src={profile.image} alt={profile.imageAlt} width={256} height={256} fetchPriority="high"/></figure></div>

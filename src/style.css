@@ -150,3 +150,6 @@ h4{font-size:14px;font-weight:600;margin:0 0 12px;color:var(--text)}
 .project .challenge-description{font-size:14px;color:var(--muted);margin:6px 0 12px;max-width:none;line-height:1.65}
 
 .additional-project .muted{max-width:none;margin:12px 0}
+
+.intro-link{color:var(--accent);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px;transition:text-decoration-color var(--ease)}
+.intro-link:hover,.intro-link:focus-visible{text-decoration-color:currentColor}
