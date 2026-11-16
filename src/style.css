@@ -148,3 +148,5 @@ h4{font-size:14px;font-weight:600;margin:0 0 12px;color:var(--text)}
 
 .project .challenge-name{font-size:16px;font-weight:600;color:var(--text);margin:10px 0 0;line-height:1.5}
 .project .challenge-description{font-size:14px;color:var(--muted);margin:6px 0 12px;max-width:none;line-height:1.65}
+
+.additional-project .muted{max-width:none;margin:12px 0}

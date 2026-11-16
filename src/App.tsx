@@ -65,11 +65,13 @@ export default function App() {
       </div></section>
       <section className="section container" id="projects">
         <SectionTitle title="Projects"/>
-        <div className="project-group"><h3 className="subheading">{projects.ctfChallenges.title}</h3><p className="muted">{projects.ctfChallenges.description}</p><ExternalLink href={projects.ctfChallenges.repository}>my-ctf-challenges</ExternalLink></div>
-        {projects.ctfChallenges.entries.map((project, i) => <article className="project" key={project.url}>
-          <span className="small-number">0{i + 1}</span><div><h3><ExternalLink href={project.url}>{project.event}</ExternalLink></h3><p className="challenge-name">{project.name}</p>{'description' in project && project.description && <p className="challenge-description">{project.description}</p>}<Tags items={project.tags}/></div>{project.stage && <span className="project-stage">{project.stage}</span>}
-        </article>)}
-        <article className="project"><span className="small-number">05</span><div><h3><ExternalLink href={projects.poolAllocator.repository}>{projects.poolAllocator.title}</ExternalLink></h3><p className="muted">{projects.poolAllocator.description}</p></div></article>
+        {projects.map((project, projectIndex) => <section className="project-category" key={`${project.title}-${projectIndex}`}>
+          <div className="project-group"><h3 className="subheading">{project.title}</h3><p className="muted">{project.description}</p>{project.repository && <ExternalLink href={project.repository}>{project.type === 'challenge-list' ? 'Challenge repository' : 'View project'}</ExternalLink>}</div>
+          {project.entries?.map((challenge, challengeIndex) => <article className="project" key={`${challenge.event}-${challenge.name}`}>
+            <span className="small-number">{String(challengeIndex + 1).padStart(2, '0')}</span><div><h3>{challenge.event}</h3><p className="challenge-name">{challenge.name}</p>{challenge.description && <p className="challenge-description">{challenge.description}</p>}<Tags items={challenge.tags}/></div>
+            {challenge.stage && <span className="project-stage">{challenge.stage}</span>}
+          </article>)}
+        </section>)}
       </section>
       <section className="section container" id="achievements">
         <SectionTitle title="Achievements"/>

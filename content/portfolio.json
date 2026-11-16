@@ -125,9 +125,10 @@
       "certificate": null
     }
   ],
-  "projects": {
-    "ctfChallenges": {
-      "title": "CTF Challenges & Others",
+  "projects": [
+    {
+      "type": "challenge-list",
+      "title": "CTF Challenges",
       "description": "Pwn challenges I've authored for national CTF competitions, as well as other side projects.",
       "repository": "https://github.com/Relster27/my-ctf-challenges/tree/main",
       "entries": [
@@ -192,12 +193,19 @@
         }
       ]
     },
-    "poolAllocator": {
+    {
+      "type": "project",
       "title": "Pool Allocator",
       "repository": "https://github.com/Relster27/Pool-Allocator",
       "description": "A simple memory allocator written in C and built on top of mmap."
-    }
-  },
+    },
+    {
+		"type": "project",
+		"title": "AES CBC CLI",
+		"repository": "https://github.com/Relster27/AES-CBC-CLI",
+		"description": "Openssl's AES CBC rip off."
+	}
+  ],
   "socialLinks": [
     {
       "label": "GitHub",
