@@ -139,10 +139,11 @@
         {
           "event": "NCW 2026",
           "stage": "Qual & Final",
-          "name": "bad verifier · xxx",
+          "name": "bad map · speedkpwn",
           "url": "https://github.com/Relster27/my-ctf-challenges/tree/main/",
           "tags": [
-            "eBPF"
+            "eBPF Map",
+            "PLACEHOLDER"
           ],
           "description": "A kernel exploitation challenge that utilizes an intended bug in eBPF verifier to perform a privilege escalation."
         },
