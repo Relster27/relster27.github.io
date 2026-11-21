@@ -145,7 +145,7 @@
             "eBPF Map",
             "PLACEHOLDER"
           ],
-          "description": "A kernel exploitation challenge that utilizes an intended bug in eBPF verifier to perform a privilege escalation."
+          "description": "A kernel exploitation challenge that utilizes an intended OOB in eBPF array map to perform a privilege escalation."
         },
         {
           "event": "IFEST CTF 2026",
